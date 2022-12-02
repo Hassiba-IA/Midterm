@@ -11,7 +11,7 @@ public class FindLowestDifference {
      * find the lowest difference between the two arrays cells
      * hint: the lowest difference between cells is 1
      *
-	 */
+	 */git
 
     public static void main(String[] args) {
         //int [] differenceArray = {};
