@@ -1,5 +1,8 @@
 package datastructure.collections;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class UseLinkedList {
 
     /*
@@ -11,7 +14,32 @@ public class UseLinkedList {
 
     public static void main(String[] args) {
 
-        //write your code here
+        LinkedList<String> fruitsList = new LinkedList<>();
+        fruitsList.add("apple");
+        fruitsList.add("pineapple");
+        fruitsList.add("banana");
+        fruitsList.add("strawberry");
+        fruitsList.add("orange");
+        fruitsList.add("Pear");
+        //for each loop
+        for( String fruits: fruitsList){
+            System.out.println(fruits);
+        }
+        //remove éléments
+        fruitsList.remove("strawberry");
+        fruitsList.remove("pineapple");;
+
+        //for loop with Iterator
+
+        Iterator<String> iterator = fruitsList.iterator();
+        for(Iterator i = fruitsList.iterator(); i.hasNext(); ) {
+
+            System.out.println(i.next());
+        }
+        //while loop with Iterator
+       while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
 
     }
 }

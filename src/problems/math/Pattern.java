@@ -12,8 +12,15 @@ public class Pattern {
      */
 
     public static void main(String[] args) {
+        int n = 100;
+        System.out.println(n);
+        for (int i = 1; i < 5; i++) {
+            for (int j = 0; j < 10; j++) {
+                n = n - i;
+                System.out.println(n);
 
-        //write your code here
 
+            }
+        }
     }
 }

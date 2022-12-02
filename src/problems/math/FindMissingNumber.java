@@ -11,11 +11,22 @@ public class FindMissingNumber {
      * use a static helper method to find it
      *
      */
+    public static int missingNumber(int[] array)
+    {
+        int arraySum=0;
+        int n=array.length+1;
+        int sumNumber=n*(n+1)/2;
+        for (int i = 0; i < array.length; i++) {
+            arraySum+=array[i];
+        }
+        int missingNumber=sumNumber-arraySum;
+        return missingNumber;
+    }
 
     public static void main(String[] args) {
 
         int[] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
-
+        System.out.println(missingNumber(array));
 
 
     }

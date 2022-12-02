@@ -14,7 +14,7 @@ public class UseHashMap {
      */
 
     public static void main(String[] args) {
-
+    //print the values present in map
         Map<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "NYC");
         map.put(2, "LA");
@@ -23,8 +23,11 @@ public class UseHashMap {
         map.put(5, "San Jose");
         map.put(6, "Seattle");
 
-        //write your code here
-
+        for(int i=1; i< map.size()+1;i++){
+            System.out.println(map.get(i));
+        }
+        //print denver element
+        System.out.println(map.get(3));
 
     }
 }
